@@ -1,0 +1,57 @@
+﻿<Window x:Class="StorePos.UI.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StorePos.UI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+        mc:Ignorable="d"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Login" Height="400" Width="640">
+    <Grid x:Name="grid">
+        <Border Background="Transparent">
+            <Border  CornerRadius="10 10 10 10" Background="WhiteSmoke">
+                <Grid >
+                    <Border CornerRadius="10 0 0 10"   Height="400" Width =" 253" HorizontalAlignment="Left">
+                        <Border.Background>
+                            <ImageBrush ImageSource="\Resource\login.png" />
+                        </Border.Background>
+                        <Grid>
+                            <TextBlock FontSize="30"  FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0 125 0 0">注册</TextBlock>
+                            <TextBlock FontSize="14"   Foreground="White" HorizontalAlignment="Center" Margin="0 185 0 0">注册一个新账号</TextBlock>
+                            <Grid Width="140" Margin="0 115 0 0">
+                                <Button  BorderBrush="LightGray" Background="Transparent" Style="{StaticResource MaterialDesignRaisedDarkButton}" Height="40" materialDesign:ButtonAssist.CornerRadius="22" ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock Foreground="White" Text="注    册" />
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <Grid Background="Transparent" Width="380" HorizontalAlignment="Right">
+                        <materialDesign:PackIcon  Kind="WindowClose"  HorizontalAlignment="Right" Margin="10 5 10 10" Height="30" Width="30" Foreground="Gray"  MouseLeftButtonDown="PackIcon_MouseLeftButtonDown"/>
+                        <TextBlock FontSize="30"  FontWeight="Bold" Foreground="#39aaa8" HorizontalAlignment="Center" Margin="0 45 0 0">用户登录</TextBlock>
+                        <TextBlock FontSize="14"   Foreground="LightGray" HorizontalAlignment="Center" Margin="0 95 0 0">使用邮箱登录</TextBlock>
+                        <Grid Width="210" Height="35" Margin="0 0 0 90">
+                            <materialDesign:PackIcon Kind="EmailCheckOutline" Foreground="Gray" Height="30" Width="30" Margin="0 5 0 0"/>
+                            <TextBox  x:Name="txtEmail"   Width="170" Height="35" HorizontalAlignment="Right" materialDesign:HintAssist.Hint="请输入邮箱号" VerticalContentAlignment="Bottom" FontSize="15"></TextBox>
+                        </Grid>
+                        <Grid Width="210" Height="35" >
+                            <materialDesign:PackIcon Kind="LockOutline" Foreground="Gray" Height="30" Width="30" Margin="0 5 0 0"/>
+                            <PasswordBox  x:Name="txtPassword"  Width="170" Height="35" HorizontalAlignment="Right" materialDesign:HintAssist.Hint="请输入密码" VerticalContentAlignment="Bottom" FontSize="15" Cursor="IBeam"></PasswordBox>
+                        </Grid>
+
+                        <Grid Width="140" Margin="0 135 0 0">
+                            <Button  BorderThickness="0" x:Name="LoginBtn" Click="LoginBtn_Click" Background="#39aaa8" Style="{StaticResource MaterialDesignRaisedDarkButton}" Height="40" materialDesign:ButtonAssist.CornerRadius="20" ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                <TextBlock Foreground="LightGray" Text="登  录"/>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</Window>

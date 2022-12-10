@@ -1,0 +1,33 @@
+﻿<Page x:Class="StorePos.UI.Pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:hc="https://handyorg.github.io/handycontrol"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StorePos.UI.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid>
+        
+        <Button Height="48" Width="160" Margin="3" Name="pageBtn1"  Click="pageBtn1_Click"
+                        Background="{DynamicResource PrimaryBrush}"
+                        hc:BackgroundSwitchElement.MouseHoverBackground="{DynamicResource MouseHoverBrush}" 
+                        hc:BackgroundSwitchElement.MouseDownBackground="{DynamicResource MouseDownBrush}">
+            <Button.Content>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!-- 
+                    <Image Source="pack://application:,,,/Images/icon.ico"/>
+                    -->
+                    <Label Grid.Column="1" Content="Page1 Button" BorderThickness="0" Background="Transparent" Foreground="{DynamicResource TextIconBrush}"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</Page>
