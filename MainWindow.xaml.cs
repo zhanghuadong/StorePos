@@ -15,7 +15,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using StorePos.UI;
- 
+using WPFNotification.Services;
+using WPFNotification.Model;
+using GalaSoft.MvvmLight.Ioc;
+
 namespace StorePos
 {
     /// <summary>
@@ -57,6 +60,9 @@ namespace StorePos
 
             System.Console.ReadLine();
 
+          
+
+
         }
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
@@ -64,6 +70,28 @@ namespace StorePos
             LoginWindow login = new LoginWindow();
             login.Show();
             this.Close();
+
+
+            
+
         }
+
+
+        private void showNotification() 
+        {
+            SimpleIoc.Default.Register<INotificationDialogService, NotificationDialogService>();
+
+
+            INotificationDialogService _dailogService = new NotificationDialogService();
+            var newNotification = new Notification()
+            {
+                Title = "Machine error",
+                Message = "Error!! Please check your Machine Code and Try Again"
+            };
+            _dailogService.ShowNotificationWindow(newNotification);
+
+        }
+
+
     }
 }

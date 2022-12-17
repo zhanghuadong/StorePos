@@ -46,7 +46,7 @@
                     <hc:SideMenuItem.Icon>
                         <TextBlock Text="&#xf314;" Style="{StaticResource TextBlockSubTitle}"/>
                     </hc:SideMenuItem.Icon>
-                </hc:SideMenuItem>
+                </hc:SideMenuItem> 
                 <hc:SideMenuItem Header="Boards">
                     <hc:SideMenuItem.Icon>
                         <TextBlock Text="&#xf444;" Style="{StaticResource TextBlockSubTitle}"/>

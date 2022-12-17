@@ -6,11 +6,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StorePos"
         mc:Ignorable="d"
+        DataContext="{Binding Main,Source={StaticResource Locator}}"
         Title="StorePos" Height="450" Width="800">
     <Grid>
 
         <StackPanel>
-            <Button Height="48" Width="160" Margin="3" Name="loginBtn" Click="loginBtn_Click"
+            <Button Height="48" Width="160" Margin="3" Name="loginBtn" Click="loginBtn_Click"  Command="{Binding AddNotification }"
                         Background="{DynamicResource PrimaryBrush}"
                         hc:BackgroundSwitchElement.MouseHoverBackground="{DynamicResource MouseHoverBrush}" 
                         hc:BackgroundSwitchElement.MouseDownBackground="{DynamicResource MouseDownBrush}">

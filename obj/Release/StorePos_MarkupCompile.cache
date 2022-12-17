@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ns1531\Desktop\WpfApp2\obj\Release\
+C:\Users\ns1531\Desktop\StorePos\obj\Release\
 StorePos
 none
 false
 TRACE
-C:\Users\ns1531\Desktop\WpfApp2\App.xaml
-1219584333
+C:\Users\ns1531\Desktop\StorePos\App.xaml
+19917496067
 
-51579654133
-14-778238428
-MainWindow.xaml;
+151841436117
+134-1826866767
+MainNavigationWindow.xaml;MainWindow.xaml;MainWindowMgr.xaml;Resource\Lang\Lang.en-US.xaml;Resource\Lang\Lang.zh-CN.xaml;Resource\Style\Brush.xaml;Resource\Style\Color.xaml;Resource\Style\Geometry.xaml;Resource\Style\Primary\Magenta.xaml;Resource\Style\Primary\Primary.xaml;Resource\Style\Primary\Violet.xaml;Resource\Style\Style\Style.xaml;Resource\Style\Theme\BaseDark.xaml;Resource\Style\Theme\BaseLight.xaml;UI\LoginWindow.xaml;UI\Pages\Page1.xaml;UI\Pages\Page2.xaml;UI\Pages\Page3.xaml;View\MainWindow.xaml;
 
-False
+True
 
